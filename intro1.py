@@ -21,8 +21,9 @@ print(strHello)
 print()
 # now for some numeric variables and printing
 # out their contents
-num1 = 5
-num2 = 9.4
+age = 25
+money = 123.75
+name = "Johnny"
 print(str(num1) + " " + str(num2))
 # print out the data types of these variables
 print(str(type(num1)) + " " + str(type(num2)))
