@@ -24,14 +24,23 @@ print()
 age = 25
 money = 123.75
 name = "Johnny"
-print(str(num1) + " " + str(num2))
+print("Name:", name)
+print("Age:", age)
+print("Money in pocket: $", money)
+print()
 # print out the data types of these variables
-print(str(type(num1)) + " " + str(type(num2)))
+print(type(age))
+print(type(money))
+print(type(name))
+print()
 # change the data type of one of our variables
-num3 = int(9.4)
-print(num3)
+age = "pokeman"
+print("age:", age)
+print(type(age))
+print()
 # print message to end program
-print("Goodbye")
+print("This program was written by Aidan Underwood")
+print("End of program")
 
 
 
