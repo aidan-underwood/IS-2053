@@ -22,19 +22,50 @@ print("You have been here for " + userYears + " year(s)")
 print()
 userCoins = int(input("How many coins do you have?: "))
 print()
-print("You have " + str(userCoins) + " coins.")
+print("I have " + str(userCoins) + " coins.")
 # add 2 more coins to the current value
 # print it
 userCoins += 2
 print()
-print("You stumbled across 2 more coins! You now have " + str(userCoins) + " coins.")
+print("(add): I stumbled across 2 more coins! I now have " + str(userCoins) + " coins.")
 
 # set up for calculations
-
+number = 4
+oddNumber = 3
+print()
+print("number has the value",number)
+print("oddNumber has the value",oddNumber)
 # use subtract, multiply, divide, modula,
 # and exponent for variable 'coins'
+userCoins -= number
+print()
+print("(subract): I now have",userCoins,"coins.")
 
+userCoins *= number
+print()
+print("(multiply): I now have",userCoins,"coins.")
 
+userCoins /= oddNumber
+print()
+print("(float divide): I now have",userCoins,"coins.")
+
+userCoins //= oddNumber
+print()
+print("(int divide): I now have",userCoins,"coins.")
+
+userCoins %= number
+print()
+print("(modulo): I have now",userCoins,"coins.")
+
+userCoins **= number
+print()
+print("(exponent): I now have",userCoins,"coins.")
 # how a line continuation characters works
-
+number = number + number * number \
+    + oddNumber
+print()
+print("number new value is",number)
 # print message to end program
+print()
+print("This program was written by Aidan Underwood.")
+print("End of program.")
