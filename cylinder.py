@@ -14,7 +14,7 @@ length = float(input("What is the length of your cylinder? "))
 # calculate the volume of a cylinder
 volume = radius**2 * pi * length
 # print out the results
-print(volume)
+print("The volume of your cylinder is",format(volume, ".4f"))
 # print message to end program
 print("This program was written by Aidan Underwood.")
 print("End of program.")
