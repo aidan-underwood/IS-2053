@@ -60,4 +60,4 @@ print("Discount amount: $", format(discountAmount, ',.2f'))
 print("Final amount: $", format(finalAmount, ',.2f'))
 
 # print message to end program
-print("\nThis program was writtn by Aidan Underwood" + "\nEnd of program.")
+print("\nThis program was written by Aidan Underwood" + "\nEnd of program.")

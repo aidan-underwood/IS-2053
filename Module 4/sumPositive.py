@@ -49,4 +49,4 @@ print("\nFinal value of positive numbers: ", format(total, ',.2f'))
 print("Average was: ", format(average, ',.2f'))
 print("There were",count,"numbers entered.")
 # print message to end program
-print("\nThis program was writtn by Aidan Underwood" + "\nEnd of program.")
+print("\nThis program was written by Aidan Underwood" + "\nEnd of program.")
