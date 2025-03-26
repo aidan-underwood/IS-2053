@@ -4,7 +4,7 @@
 #          using various functions and methods in
 #          Python.
 #
-# Programmer: 
+# Programmer: Aidan Underwood
 
 import random
 
@@ -147,13 +147,14 @@ def main():
     # populate the 'multiList' with random numbers
     populateMultiList(multiList)
     # print the list 'multiList'
-    
+    print("Multilist populated:")
+    print(multiList)
     # print the list 'multiList' again
-    
-    # call the function 'printMultiList()' to
-    # print out the contents of 'multiList'
+    print("\nMultilist printed again:")
+    printMultiList(multiList)
  
     # call function goodBye() to end program
+    goodBye()
     
     
 # end function main 
@@ -164,8 +165,15 @@ def printList(list):
         print(list[i], end = " ")
 # end function printList
 
+def goodBye():
+    print("\nThis program was written by Aidan Underwood" + "\nEnd of program.")
 # end function goodBye
 
+def printMultiList(multiList):
+    for i in range(len(multiList)):
+        for j in range(len(multiList[i])):
+            print(multiList[i][j], end = " ")
+        print()
 # end function printMultiList
 
 def populateMultiList(multiList):
