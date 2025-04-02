@@ -55,7 +55,7 @@ def main():
     # it all to uppercase
     fullName = firstName + lastName
     fullName = fullName.upper()
-    print("\nSo, your full name is: ", fullName)
+    print("\nSo, your full name is:", fullName)
     
     print("\nSorry, I did not mean to scream your name! ")
     print("Plus, your name should have a space for easy reading.")
@@ -79,28 +79,39 @@ def main():
     
     # create a new full name and print it
     fullName = newFirstName + " " + newLastName
-    print("\nOkay, now your full name is: ", fullName)
+    print("\nOkay, now your full name is:", fullName)
                   
     # add symbols before and after full name and
     # print out full name
+    fullName = "***" + fullName + "!!!"
+    print("\nPrinting your name again:", fullName)
+    print("Oops! I got overly excited. Let me fix your name again.")
     
     # now get rid of these symbols and print
     # the full name
+    fullName = fullName.lstrip("*")
+    print("\nCorrection almost completed:", fullName)
+    fullName = fullName.rstrip("!")
+    print("Finally, your full name is now:", fullName)
      
     # add prefix 'Dr. ' to full name and
     # print out full name
+    fullName = fullName.replace(newFirstName, "Dr. " + newFirstName)
+    print("\nAllow me to introduce: " + fullName)
     
     
     # create a list called 'allWords' from 
     # the sentence 'sentence'
+    allWords = sentence.split()
+    print("\nThe list allWords:")
+    print(allWords)
 
     # call function goodBye() to end program
     goodBye()
-    
 # end function main
 
 def goodBye():
-    
+    print("\n\nThis program was written by Aidan Underwood" + "\nEnd of program.")
 # end function goodBye
 
 
