@@ -56,26 +56,69 @@ def main():
     
     # update an item in the 'rollerCoaster' dictionary
     # and add another name to it as well
+    rollerCoasters["Name1"] = "Iron Rattler"
+    rollerCoasters["Name5"] = "My Roller Coaster"
     
     # print out the roller coaster names
+    print("\nHere are the roller coaster names only:")
+    
+    for key in rollerCoasters:
+        print(key, rollerCoasters[key])
+
+    # how many roller coaster names are there?
+    rcLen = len(rollerCoasters)
+    print("\nThere are", rcLen, "roller coasters.")
         
     # delete an item from 'rollerCoasters', then
     # print out the dictionary
+    try:
+        del rollerCoasters["Name5"]
+    except Exception:
+        print("\nError! The key that you want deleted does not exist.")
+        
+    print("\nAgain, here are the roller coaster names:")
     
+    for key in rollerCoasters:
+        print(key, rollerCoasters[key])
+        
+    rcLen = len(rollerCoasters)
+    print("\nThere are", rcLen, "roller coasters.")
+   
     # pop an item from the dictionaries and then
     # print them out
+    rcName = rollerCoasters.pop(aName, "Does not exist.")
+    rcSpeed = speed.pop(aName, "No speed.")
+    rcHeight = height.pop(aName, "No height.")
+    rcLength = length.pop(aName, "No length.")
+    
+    print("\nPopped items from the dictionaries:")
+    print(rcName, rcSpeed, rcHeight, rcLength)
     
     # print out the dictionaries
+    print("\nModified dictionaries:")
+    print(rollerCoasters)
+    print(speed)
+    print(height)
+    print(length)
     
     # clear out all of our dictionaries
+    rollerCoasters.clear()
+    speed.clear()
+    height.clear()
+    length.clear()
     
     # print out all dictionaries
+    print("\nRoller coasters - ", rollerCoasters)
+    print("Speed of roller coasters - ", speed)
+    print("Height of roller coasters - ", height)
+    print("Length of roller coasters - ", length)
 
     # call function goodBye() to end program
-    
+    goodBye()
 # end function main
 
-
+def goodBye():
+    print("\nThis program was written by Aidan Underwood" + "\nEnd of program.")
 # end function goodBye
 
 # invoke/call the function main()
